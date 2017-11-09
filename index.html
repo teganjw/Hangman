@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<h1>Hangman</h1>
+
+<body onload = "hangman()">
+
+<select id="Categories" onchange="hangman(this.value)">
+    <option value="0">Select A Category</option>
+    <option value="1">Fruits</option>
+    <option value="2">Animals</option>
+</select>
+
+<button id="myButton" onclick="hangman()">Start Game</button>
+<div id="output"></div>
+
+<div id="container" class="box">
+    <div class="box top left"></div>
+    <div class="box top center"></div>
+    <div class="box top right"></div>
+
+    <div class="box middle left"></div>
+    <div class="box middle center"></div>
+    <div class="box middle right"></div>
+
+    <div class="box bottom left"></div>
+    <div class="box bottom center"></div>
+    <div class="box bottom right"></div>
+</div>
+
+
+
+</body>
+</html>
