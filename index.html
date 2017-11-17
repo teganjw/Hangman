@@ -15,24 +15,49 @@
     <option value="0">Select A Category</option>
     <option value="1">Fruits</option>
     <option value="2">Animals</option>
+    <option value="3">Countries</option>
 </select>
 
-<button id="myButton" onclick="hangman()">Start Game</button>
+
+<select id="letters" onchange="chooseLetter(this.value)">
+    <option value="0">Guess A Letter</option>
+    <option value="1">a</option>
+    <option value="2">b</option>
+    <option value="3">c</option>
+    <option value="4">d</option>
+    <option value="5">e</option>
+    <option value="6">f</option>
+    <option value="7">g</option>
+    <option value="8">h</option>
+    <option value="9">i</option>
+    <option value="10">j</option>
+    <option value="11">k</option>
+    <option value="12">l</option>
+    <option value="13">m</option>
+    <option value="14">n</option>
+    <option value="15">o</option>
+    <option value="16">p</option>
+    <option value="17">q</option>
+    <option value="18">r</option>
+    <option value="19">s</option>
+    <option value="20">t</option>
+    <option value="21">u</option>
+    <option value="22">v</option>
+    <option value="23">w</option>
+    <option value="24">x</option>
+    <option value="25">y</option>
+    <option value="26">z</option>
+</select>
+
+<p1>Think you know the word? Type it here: </p1>
+<input type="text" id="myField" value="" size="25">
+<button id="myButton" onclick="chooseLetter()">Guess Word</button>
+
+
 <div id="output"></div>
-
-<div id="container" class="box">
-    <div class="box top left"></div>
-    <div class="box top center"></div>
-    <div class="box top right"></div>
-
-    <div class="box middle left"></div>
-    <div class="box middle center"></div>
-    <div class="box middle right"></div>
-
-    <div class="box bottom left"></div>
-    <div class="box bottom center"></div>
-    <div class="box bottom right"></div>
-</div>
+<div id="output1"></div>
+<div id="output2"></div>
+<div id="output3"></div>
 
 
 
