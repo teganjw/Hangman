@@ -36,13 +36,15 @@ function chooseLetter(letters) {
     var alphabet = [0, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     alphabet = alphabet[letters];
     if(letters>0) {
-        var guessedAlready = guessedLetters.indexOf(alphabet)
+        var guessedAlready = guessedLetters.indexOf(alphabet);
         if (guessedAlready == -1) {
             guessedLetters.push(alphabet);
-        }else{
-            guesses--;}
+        }
+
     }
-    var guessedIndex = result.search(alphabet);
+    if(result.search(alphabet)==-1){
+        guesses--;
+    }
 
 
     var slots = "";
@@ -86,7 +88,3 @@ function chooseLetter(letters) {
     }
 
 }
-
-
-
-

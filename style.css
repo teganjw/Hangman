@@ -1,3 +1,4 @@
+
 #output{
     font-size:40px;
 
@@ -10,4 +11,17 @@
 
 body{
     background-color: #c4b1db;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+#output2{
+    font-size: 30px;
+}
+
+#output3{
+    font-size: 20px;
 }
